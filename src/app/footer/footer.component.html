@@ -1,14 +1,22 @@
-<div class="container footer" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.xs="start center" fxLayoutAlign.sm="start center" fxLayoutAlign.gt-sm="center center" fxLayoutWrap fxLayoutGap="10px">
+<div class="container footer" 
+    fxLayout="row" 
+    fxLayout.sm="column" 
+    fxLayout.xs="column" 
+    fxLayoutAlign.xs="start center" 
+    fxLayoutAlign.sm="start center"
+    fxLayoutAlign.gt-sm="center center" 
+    fxLayoutWrap 
+    fxLayoutGap="10px">
 
   <div fxFlex="100%" fxFlex.gt-sm="50%">
     <div fxLayout="row">
       <div fxFlex="40" fxFlexOffset="20px">
         <h4>Links</h4>
         <md-list>
-          <md-list-item><a routerLinkActive="active" routerLink="/home" md-button>Home</a></md-list-item>
-          <md-list-item><a md-button>About</a></md-list-item>
-          <md-list-item><a routerLinkActive="active" routerLink="/menu" md-button>Menu</a></md-list-item>
-          <md-list-item><a routerLinkActive="active" routerLink="/contactus" md-button>Contact</a></md-list-item>
+          <md-list-item><a md-button routerLink="/home">Home</a></md-list-item>
+          <md-list-item><a md-button routerLink="/aboutus">About</a></md-list-item>
+          <md-list-item><a md-button routerLink="/menu">Menu</a></md-list-item>
+          <md-list-item><a md-button routerLink="/contactus">Contact</a></md-list-item>
         </md-list>
       </div>
       <div fxFlex="50">
