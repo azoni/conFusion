@@ -18,7 +18,6 @@
 		  <p>{{dish.description}}</p>
 		</md-card-content>
 		<md-card-actions>
-				<button md-button (click)="goBack()">BACK</button>
 		  <button md-button>LIKE</button>
 		  <button md-button>SHARE</button>
 		</md-card-actions>
@@ -28,15 +27,15 @@
 	<div fxFlex="40" *ngIf="dish">
 	  <md-list fxFlex>
 		<h1 md-line> Comments </h1>
-		<md-list-item *ngFor="let commentItem of dish.comments">
+		<md-list-item *ngFor="let x of dish.comments">
 		  <p md-line>
-			<span> {{commentItem.comment}} </span>
+			<span> {{x.comment}} </span>
 		  </p>
 		  <p md-line>
-			<span> {{commentItem.rating}} Stars</span>
+			<span> {{x.rating}} Stars</span>
 		  </p>
 		  <p md-line>
-			<span> -- {{commentItem.author}} </span><span> {{commentItem.date | date}} </span>
+			<span> -- {{x.author}} </span><span> {{x.date | date}} </span>
 		  </p>
 		</md-list-item>
 	  </md-list>
